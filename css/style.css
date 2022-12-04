@@ -240,23 +240,23 @@ ________________________________________________________________________________
 .work__item:first-child{
   grid-column: span 2; 
   grid-row: span 2;
-  background-image: url("/images/SoccerBud.jpg");
+  background-image: url("../images/SoccerBud.jpg");
 }
 
 .work__item.kirklessHotel{
-  background-image: url("/images/kirklees-hotel.jpg");
+  background-image: url("../images/kirklees-hotel.jpg");
 }
 
 .work__item.surf{
-  background-image: url("/images/surf.jpg");
+  background-image: url("../images/surf.jpg");
 }
 
 .work__item.desire{
-  background-image: url("/images/desire.jpg");
+  background-image: url("../images/desire.jpg");
 }
 
 .work__item.mavic{
-  background-image: url("/images/mavic.jpg");
+  background-image: url("../images/mavic.jpg");
 }
 
 
