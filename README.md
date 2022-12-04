@@ -38,3 +38,6 @@ To showcase my skills and current progress using practices that I've learned at 
 - Fully responsive
 - Using BEM classes naming convention
 
+## Webpage
+
+- [Personal portfolio link](https://val-design-code.github.io/personal__portfolio/)
