@@ -1,50 +1,173 @@
 <!DOCTYPE html>
 <html lang="en-gb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Val // Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Val // Web Developer</title>
-  <link rel="stylesheet" href="css/style.css" />
-</head>
+  <body>
+    <!-- Header Start -->
+    <header class="header">
+      <div class="header__containter container">
+        <!-- Nav Start -->
+        <nav class="header__nav nav">
+          <img class="nav__logo" src="images/nav__logo.svg" alt="Val logo" />
+          <ul class="nav__items">
+            <li class="nav__item">
+              <a class="nav__item-link" href="#about">About me</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__item-link" href="#work">Work</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__item-link" href="#contact">Contact me</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Nav End -->
+      </div>
+    </header>
+    <!-- Header End -->
 
-<body>
-  <!-- main logo / nav -->
-  <header>
-    <img class="header__logo" src="images/nav__logo.svg" alt="Val logo">
-    <nav class="header__nav nav">
-      <ul class="nav__items">
-        <li class="nav__item"><a class="nav__item-link" href="#about">About me</a></li>
-        <li class="nav__item"><a class="nav__item-link" href="#work">Work</a></li>
-        <li class="nav__item"><a class="nav__item-link" href="#contact">Contact me</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- hero banner -->
-  <section class="hero-banner">
-    <div>
-      <h2>Cool subtitle here!</h2>
-    </div>
-  </section>
-
-  <main class="page-wrapper">
-    <!-- about me -->
-    <section class="page-section" id="about">
-      <h2>About<br><span>Me</span></h2>
+    <!-- Hero Start -->
+    <section class="hero">
+      <div class="hero__container container">
+        <!-- Hero Content Start -->
+        <div class="hero__content">
+          <h1 class="hero__content-title">Hey, I'm Val</h1>
+          <h2 class="hero__content-subtitle">
+            a front-end developer and web designer.
+          </h2>
+        </div>
+        <!-- Hero Content End -->
+      </div>
     </section>
+    <!-- Hero End -->
 
-    <!-- portfolio container -->
-    <section class="page-section" id="work">
-      <h2>Work</h2>
-    </section>
+    <!-- Main Start -->
+    <main class="main container">
 
-    <!-- contact -->
-    <section class="page-section contact" id="contact">
-      <h2>Contact<br><span>Me</span></h2>
-    </section>
-  </main>
-</body>
+      <!-- About Start -->
+      <section class="about section" id="about">
 
+        <aside class="about__title-box section__left">
+          <h2 class="about__title section__title">About Me</h2>
+        </aside>
+
+        <div class="about__text section__right">
+          <p class="about__copy">
+            I enjoy doing things that live on the internet. My interest in web
+            development started back in 2019 when I had to create a gallery
+            website for my class.
+          </p>
+          <p class="about__copy">
+            Fast-forwards to today, I’ve had the privilege of working as a
+            freelancer, at a startup and design company, and a web designer at a
+            huge corporation.
+          </p>
+          <p class="about__copy">
+            My main focus these days is building accessible, inclusive products
+            and unforgivable experiences using latest design trends.
+          </p>
+        </div>
+
+      </section>
+      <!-- About End -->
+
+      <!-- Works Start -->
+      <section class="work section" id="work">
+        
+        <aside class="work__title-box section__left">
+          <h2 class="work__title section__title">Work</h2>
+        </aside>
+        
+        <div class="work__items section__right">
+
+          <div class="work__item soccerBud">
+            <div class="work__content">
+              <h3 class="work__item-title">SoccerBud</h3>
+              <p class="work__item-text">Created using GULP, SCSS,Js. The webpage has been entirely designed by me in Figma.</p>
+            </div>
+            <a class="work__link" href="https://valentin-code-dot.github.io/SoccerBud/index.html"></a>
+          </div>
+
+          <div class="work__item kirklessHotel">
+            <div class="work__content">
+              <h3 class="work__item-title">Kirkless Hotels</h3>
+              <p class="work__item-text">Web application university project. I've been using PHP, MySQL and MVC, besides HTML and CSS. Design was made using Figma.</p>
+            </div>
+            <a class="work__link" href="https://valentin-code-dot.github.io/SoccerBud/index.html"></a>
+          </div>
+
+          <div class="work__item surf">
+            <div class="work__content">
+              <h3 class="work__item-title">Surf</h3>
+              <p class="work__item-text">Web application built using HTML, SCSS, Js, Jquery and GULP</p>
+            </div>
+            <a class="work__link" href="https://valentin-code-dot.github.io/Surf/"></a>
+          </div>
+
+          <div class="work__item desire">
+            <div class="work__content">
+              <h3 class="work__item-title">Desire</h3>
+              <p class="work__item-text">Desire is a multi-page furniture website made using Gulp , SCSS, Jquery and other Js libraries.</p>
+            </div>
+            <a class="work__link" href="https://valentin-code-dot.github.io/Desire/index.html"></a>
+          </div>
+
+          <div class="work__item mavic">
+            <div class="work__content">
+              <h3 class="work__item-title">Mavic</h3>
+              <p class="work__item-text">Mavic is a landing page made using Gulp, SCSS, Jquery and other Js libraries.</p>
+            </div>
+            <a class="work__link" href="https://valentin-code-dot.github.io/Mavic/#top"></a>
+          </div>
+
+
+        </div>
+        
+      </section>
+      <!-- Works End -->
+
+    </main>
+    <!-- Main End -->
+
+    <!-- Contact Start -->
+    <footer class="contact footer" id="contact">
+
+      <div class="contact__container container section">
+
+        <aside class="contact__title-box section__left">
+          <h2 class="contact__title section__title">Contact Me</h2>
+        </aside>
+  
+        <div class="contact__inner section__right">
+          <ul class="contact__items">
+            <li class="contact__item">
+              <a class="contact__item-link" target="_blank" href="mailto:valentincv.01@gmail.com">valentincv.01@gmail.com</a>
+            </li>
+            <li class="contact__item">
+              <a class="contact__item-link" target="_blank" href="https://github.com/Val-Design-Code">GitHub</a>
+            </li>
+            <li class="contact__item">
+              <a class="contact__item-link" target="_blank" href="https://selene.hud.ac.uk/u2070657/portfolio/">Main portfolio</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+    </footer>
+    <!-- Contact End -->
+
+  </body>
 </html>

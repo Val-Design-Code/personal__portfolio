@@ -1,13 +1,14 @@
 /* Styles
 
 1. Reset
-2. General
-3. Nav
-4. Hero
-5. About
-6. Work
-7. Contact
-8. Media
+2. General - Variables
+3. Header
+4. Nav
+5. Hero
+6. About
+7. Work
+8. Contact
+9. Media
 
 */
 
@@ -16,13 +17,14 @@ ________________________________________________________________________________
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4em;
 }
 
 h1,
@@ -32,6 +34,8 @@ h4,
 h5,
 h6 {
   margin: 0;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.1em;
 }
 
 p {
@@ -52,15 +56,316 @@ a{
   text-decoration: none;
 }
 
+
 /* General
 ________________________________________________________________________________________________________*/
 
+:root{
+  --white-100: #ffffff;
+  --black-100: #000000;
+}
+
+.container{
+  width: 100%;
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.section{
+  padding-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  color: var(--black-100);
+}
+
+.section__left{
+  width: 12%;
+}
+
+.section__right{
+  width: 88%;
+  padding-left: 2rem;
+  border-left: 2px solid var(--black-100);
+}
+
+.section__title{
+  font-size: 2rem;
+  text-align: right;
+  padding-right: 1rem;
+}
 
 
 
-
+/* Header
+________________________________________________________________________________________________________*/
 
 
 
 /* Navigation
 ________________________________________________________________________________________________________ */
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+
+.nav__logo{
+  height: 100%;
+  width: auto;
+  max-height: 50px;
+  display: inline-block;
+}
+
+.nav__items{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 3rem;
+}
+
+.nav__item-link{
+  font-size: 1.125rem;
+  line-height: 1.1em;
+  color: var(--white-100);
+  font-weight: 400;
+  padding-bottom: .5rem;
+  border-bottom: 2px solid transparent;
+}
+
+.nav__item-link:hover{
+  border-bottom: 2px solid var(--white-100);
+  transition: border-bottom .5s ease-in-out;
+}
+
+/* Hero
+________________________________________________________________________________________________________ */
+
+.hero{
+  background-image: url('../images/portfolio__bg-min.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  margin-top: -11rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.hero__content{
+  max-width: 640px; 
+  color: var(--white-100);
+}
+
+.hero__content-title{
+  font-size: 5rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+
+.hero__content-subtitle{
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.4em;
+}
+
+
+/* About
+________________________________________________________________________________________________________ */
+
+.about__title{
+  max-width: 7ch;
+}
+
+.about__copy:not(:last-child){
+  padding-bottom: 1rem;
+}
+
+/* Work
+________________________________________________________________________________________________________ */
+
+.work__items{
+  display: grid;
+  align-items: center;
+  justify-content: start;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 240px);
+  gap: 1.25rem;
+}
+
+.work__item{
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  grid-column: span 1; 
+  grid-row: span 1;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.work__content{
+  padding: 1rem 1rem 1rem 2rem;
+  width: 100%;
+  max-width: 320px;
+  background-color: var(--black-100);
+  color: var(--white-100);
+}
+
+.work__item-title{
+  font-size: 2rem;
+  padding-bottom: .5rem;
+}
+
+.work__link{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0%);
+  transition: background .5s ease;
+  z-index: 2;
+}
+
+.work__link:hover{
+  background: rgba(0, 0, 0, 50%);
+}
+
+.work__item:first-child{
+  grid-column: span 2; 
+  grid-row: span 2;
+  background-image: url("/images/SoccerBud.jpg");
+}
+
+.work__item.kirklessHotel{
+  background-image: url("/images/kirklees-hotel.jpg");
+}
+
+.work__item.surf{
+  background-image: url("/images/surf.jpg");
+}
+
+.work__item.desire{
+  background-image: url("/images/desire.jpg");
+}
+
+.work__item.mavic{
+  background-image: url("/images/mavic.jpg");
+}
+
+
+/* Footer
+________________________________________________________________________________________________________ */
+
+footer{
+  margin-bottom: 2rem;
+}
+
+.contact__items{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 3rem;
+}
+
+.contact__item-link{
+  font-size: 1.125rem;
+  line-height: 1.1em;
+  color: var(--black-100);
+  font-weight: 400;
+  padding-bottom: .5rem;
+  border-bottom: 2px solid transparent;
+}
+
+.contact__item-link:hover{
+  border-bottom: 2px solid var(--black-100);
+  transition: border-bottom .5s ease-in-out;
+}
+
+
+/* Media
+________________________________________________________________________________________________________ */
+
+@media (max-width: 960px){
+  .section__left{
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .section__right{
+    width: 100%;
+    padding-left: 0;
+    padding-top: 2rem;
+    border-left: none;
+    border-top: 2px solid var(--black-100);
+  }
+
+  .section__title{
+    max-width: 100%;
+    padding-right: 0;
+    padding-bottom: 1rem;
+    text-align: left;
+  }
+
+  .contact__items{
+    justify-content: center;
+  }
+  .contact__items{
+    padding-left: 0;
+  }
+
+  .work__items{
+    grid-template-rows: repeat(6, 240px);
+  }
+
+  .work__item:not(:first-child){
+    grid-column: span 2; 
+  }
+
+  .work__content{
+    max-width: 80%;
+  }
+}
+
+@media (max-width:540px){
+  .nav{
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .hero{
+    margin-top: -13rem;
+  }
+
+  .section{
+    padding-top: 3rem;
+  }
+
+  .hero__content-title{
+    font-size: 3rem;
+  }
+
+  .hero__content-subtitle{
+    font-size: 1.25rem;
+  }
+
+  .work__content{
+    max-width: 100%;
+  }
+
+  .work__item-title{
+    font-size: 1.25rem;
+  }
+
+  .contact__items{
+    flex-direction: column;
+  }
+
+
+}
